@@ -1,0 +1,36 @@
+# ── Core framework ────────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+
+# ── LangGraph + LangChain ─────────────────────────────────────────────────────
+langgraph==0.2.56
+langchain==0.3.12
+langchain-openai==0.2.12
+langchain-community==0.3.12
+langchain-core==0.3.25
+
+# ── LLM providers ─────────────────────────────────────────────────────────────
+openai==1.57.2
+
+# ── Web search ────────────────────────────────────────────────────────────────
+tavily-python==0.5.0
+
+# ── Vector memory ─────────────────────────────────────────────────────────────
+chromadb==0.5.23
+sentence-transformers==3.3.1
+
+# ── Page fetching ─────────────────────────────────────────────────────────────
+httpx==0.28.1
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# ── PDF export ────────────────────────────────────────────────────────────────
+weasyprint==62.3          # primary PDF renderer
+reportlab==4.2.5          # fallback PDF renderer
+
+# ── Dev/testing ───────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx                     # also used as test client
+python-dotenv==1.0.1
